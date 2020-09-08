@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Images/marvel.ico" type="image/x-icon" />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Marvel Collections</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/"> <img src="Images/marvel_logo.png" class="header__logo" /></a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__link">
+            <input
+              type="text"
+              id="search"
+              class="header__input"
+              placeholder="Search Superheroes"
+            />
+            <label class="header__label" for="search">Search Superheroes</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="main__title">Superheroes Collections</h1>
+      <section class="section-hero">
+        <div class="cards__container">
+          <!-- Cards inserted from Javascripts -->
+        </div>
+      </section>
+      <div class="pagination">
+        <button class="btn btn__decrementar desactivado">Previous</button>
+        <button class="btn btn__paginas" value="0"></button>
+        <button class="btn btn__incrementar">Next</button>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="javascript/app.js" defer></script>
+  </body>
+</html>

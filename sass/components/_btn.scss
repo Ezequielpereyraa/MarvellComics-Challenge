@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 3rem;
+  background-color: $color-black;
+  color: $color-white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  transition: all 0.6s ease;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(-1rem);
+  }
+
+  &:hover {
+    background: rgb(49, 49, 49);
+  }
+}

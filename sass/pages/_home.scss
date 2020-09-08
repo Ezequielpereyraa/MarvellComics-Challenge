@@ -1,0 +1,13 @@
+.main__title {
+  font-size: 5rem;
+  color: $color-white;
+  margin-top: 19rem;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  @media only screen and (max-width: 46em) {
+    margin-top: 25rem;
+    font-size: 3.5rem;
+  }
+}

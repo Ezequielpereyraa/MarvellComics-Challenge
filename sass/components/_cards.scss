@@ -1,0 +1,109 @@
+.cards__container {
+  width: 100%;
+  display: grid;
+  padding: 3rem 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 4rem;
+  margin: 0 auto;
+  @media only screen and (max-width: 46em) {
+    justify-items: center;
+    padding: 0;
+    margin-top: 4rem;
+  }
+}
+
+.heroes {
+  &__box {
+    height: 30rem;
+    padding: 1.5rem;
+    width: 28rem;
+    background-color: $color-black;
+    outline: 0.7rem solid $color-white;
+    outline-style: double;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    position: relative;
+    color: $color-white;
+    padding: 0;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 75%;
+    padding: 0;
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(0.9);
+
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+}
+
+.heroesp {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    position: relative;
+    color: $color-white;
+    /*     @media only screen and (max-width: 57em) {
+      justify-content: center;
+      grid-template-columns: 100%;
+    } */
+  }
+  &__text {
+    background-color: rgba(#fff, 0.1);
+    padding: 0 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  &__name {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  &__img {
+    height: 40rem;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(0.9);
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+}

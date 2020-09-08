@@ -1,0 +1,13 @@
+@import 'base/base';
+
+@import 'abstacts/typography';
+@import 'abstacts/mixins';
+@import 'abstacts/variables';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+@import 'components/cards';
+@import 'components/btn';
+@import 'pages/home';
